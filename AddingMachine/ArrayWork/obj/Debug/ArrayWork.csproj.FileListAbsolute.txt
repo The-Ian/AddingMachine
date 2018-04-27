@@ -1,0 +1,9 @@
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\bin\Debug\ArrayWork.exe.config
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\bin\Debug\ArrayWork.exe
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\bin\Debug\ArrayWork.pdb
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\obj\Debug\ArrayWork.csprojResolveAssemblyReference.cache
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\obj\Debug\ArrayWork.Form1.resources
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\obj\Debug\ArrayWork.Properties.Resources.resources
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\obj\Debug\ArrayWork.csproj.GenerateResource.Cache
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\obj\Debug\ArrayWork.exe
+C:\Users\Cyberadmin\Desktop\C# Stuff\AddingMachine\ArrayWork\obj\Debug\ArrayWork.pdb
