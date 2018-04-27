@@ -39,8 +39,6 @@
             this.multiBtn = new System.Windows.Forms.Button();
             this.divBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.grandTotalLabel = new System.Windows.Forms.Label();
-            this.grTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // numberLB
@@ -72,6 +70,7 @@
             this.resetBtn.TabIndex = 3;
             this.resetBtn.Text = "Reset";
             this.resetBtn.UseVisualStyleBackColor = false;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click_1);
             // 
             // label1
             // 
@@ -88,15 +87,16 @@
             // 
             this.totalLabel.BackColor = System.Drawing.Color.LightYellow;
             this.totalLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totalLabel.Location = new System.Drawing.Point(303, 206);
+            this.totalLabel.Location = new System.Drawing.Point(303, 232);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(133, 41);
             this.totalLabel.TabIndex = 5;
+            this.totalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // runningTotalLabel
             // 
             this.runningTotalLabel.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.runningTotalLabel.Location = new System.Drawing.Point(326, 188);
+            this.runningTotalLabel.Location = new System.Drawing.Point(326, 214);
             this.runningTotalLabel.Name = "runningTotalLabel";
             this.runningTotalLabel.Size = new System.Drawing.Size(113, 17);
             this.runningTotalLabel.TabIndex = 6;
@@ -111,7 +111,7 @@
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(89, 23);
             this.addBtn.TabIndex = 7;
-            this.addBtn.Text = "Addition";
+            this.addBtn.Text = "&Addition";
             this.addBtn.UseVisualStyleBackColor = false;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
@@ -124,7 +124,7 @@
             this.subBtn.Name = "subBtn";
             this.subBtn.Size = new System.Drawing.Size(89, 23);
             this.subBtn.TabIndex = 8;
-            this.subBtn.Text = "Subtraction";
+            this.subBtn.Text = "&Subtraction";
             this.subBtn.UseVisualStyleBackColor = false;
             this.subBtn.Click += new System.EventHandler(this.subBtn_Click);
             // 
@@ -137,7 +137,7 @@
             this.multiBtn.Name = "multiBtn";
             this.multiBtn.Size = new System.Drawing.Size(89, 23);
             this.multiBtn.TabIndex = 9;
-            this.multiBtn.Text = "Multiplication";
+            this.multiBtn.Text = "&Multiplication";
             this.multiBtn.UseVisualStyleBackColor = false;
             this.multiBtn.Click += new System.EventHandler(this.multiBtn_Click);
             // 
@@ -150,7 +150,7 @@
             this.divBtn.Name = "divBtn";
             this.divBtn.Size = new System.Drawing.Size(89, 23);
             this.divBtn.TabIndex = 10;
-            this.divBtn.Text = "Division";
+            this.divBtn.Text = "&Division";
             this.divBtn.UseVisualStyleBackColor = false;
             this.divBtn.Click += new System.EventHandler(this.divBtn_Click);
             // 
@@ -165,24 +165,6 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Operators";
             // 
-            // grandTotalLabel
-            // 
-            this.grandTotalLabel.BackColor = System.Drawing.Color.LightYellow;
-            this.grandTotalLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.grandTotalLabel.Location = new System.Drawing.Point(303, 272);
-            this.grandTotalLabel.Name = "grandTotalLabel";
-            this.grandTotalLabel.Size = new System.Drawing.Size(133, 41);
-            this.grandTotalLabel.TabIndex = 11;
-            // 
-            // grTotal
-            // 
-            this.grTotal.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grTotal.Location = new System.Drawing.Point(332, 253);
-            this.grTotal.Name = "grTotal";
-            this.grTotal.Size = new System.Drawing.Size(81, 19);
-            this.grTotal.TabIndex = 12;
-            this.grTotal.Text = "Grand Total";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,8 +172,6 @@
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(487, 325);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.grTotal);
-            this.Controls.Add(this.grandTotalLabel);
             this.Controls.Add(this.divBtn);
             this.Controls.Add(this.multiBtn);
             this.Controls.Add(this.subBtn);
@@ -222,8 +202,6 @@
         private System.Windows.Forms.Button multiBtn;
         private System.Windows.Forms.Button divBtn;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label grandTotalLabel;
-        private System.Windows.Forms.Label grTotal;
     }
 }
 

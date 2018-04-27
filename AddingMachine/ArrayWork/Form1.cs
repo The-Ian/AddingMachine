@@ -13,7 +13,7 @@ namespace ArrayWork
     public partial class Form1 : Form
     {
         double[] numberArray = new double[400];
-        int i;
+        int i = 0;
         double total = 0;
 
         public Form1()
@@ -138,14 +138,23 @@ namespace ArrayWork
             }
         }
 
-        private void resetBtn_Click(object sender, EventArgs e)
+
+
+        private void resetBtn_Click_1(object sender, EventArgs e)
         {
-            total = 0;
-            totalLabel.Text = 0.ToString();
-            numberLB.Items.Clear();
+            try
+            {
+                total = 0;
+                totalLabel.Text = 0.ToString();
+                numberLB.Items.Clear();
+                numberEntryTB.Clear();
+                numberEntryTB.Focus();
+            }
+
+            catch (Exception)
+            {
+                throw;
+            }
         }
-
-        
-
     }
 }
